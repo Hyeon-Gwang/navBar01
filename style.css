@@ -1,0 +1,23 @@
+
+
+*{margin: 0; padding: 0; box-sizing: border-box; font-family: ; user-select: none;}
+
+.btn{width: 45px; height: 45px; background-color: #1b1b1b; border-radius: 3px; position: absolute; top: 15px; left: 45px; text-align: center; cursor: pointer; transition: left .4s ease;}
+.btn.click{left: 260px;}
+.btn.click span:before{content: '\f00d';}
+.btn span{font-size: 28px; color: #fff; line-height: 45px;}
+.sidebar{width: 250px; height: 100%; position: fixed; left: -250px; background-color: #1b1b1b; transition: left .4s ease;}
+.sidebar.show{left: 0;}
+.sidebar .text{background-color: #1e1e1e; font-size: 25px; font-weight: 600; color: #fff; line-height: 65px; text-align: center; letter-spacing: 1px;}
+
+nav ul{width: 100%; height: 100%; background: #1b1b1b;}
+nav ul li{border-bottom: 1px solid rgba(255, 255, 255, .1); line-height: 60px;}
+nav ul li a{display: block; width: 100%; padding-left: 40px; position: relative; border-left: 3px solid transparent; font-size: 18px; font-weight: 500; color: #fff; text-decoration: none;}
+nav ul li a:hover{background-color: #1e1e1e; border-left-color: cyan; color: cyan;}
+nav ul ul{display: none;  position: static;}
+nav ul ul li{border-bottom: none; line-height: 42px;}
+nav ul ul li a{padding-left: 80px; font-size: 17px; color: #e6e6e6;}
+nav ul li a span{position: absolute; top: 50%; right: 20px; transform: translateY(-50%); font-size: 22px; transition: transform .5s;}
+nav ul li a span.rotate{transform: translateY(-50%) rotate(180deg);}
+
+.show{display: block;}
